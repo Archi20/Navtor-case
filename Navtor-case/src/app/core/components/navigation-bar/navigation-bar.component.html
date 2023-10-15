@@ -1,0 +1,3 @@
+<p-card>
+  <p-button *ngFor="let item of navigationButtons; let i = index" class="button button__navigation" [label]="item.label"  [text]="!isActiveTab(i)" (click)="changeActiveButton(i)"/>
+</p-card>
