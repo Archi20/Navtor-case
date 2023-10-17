@@ -11,12 +11,12 @@ export class NavigationBarComponent {
   navigationButtons = [
     { label: 'Vessel', path: 'vessel' },
     { label: 'Emissions', path: 'emmisions' },
+    { label: 'Comments', path: 'comments' },
   ];
 
   constructor(private router: Router) {}
 
   changeActiveButton(index: number): void {
-    console.log(index, this.navigationButtons[index]);
     this.activeButtonIndex = index;
     this.router.navigate([this.navigationButtons[index].path]);
   }

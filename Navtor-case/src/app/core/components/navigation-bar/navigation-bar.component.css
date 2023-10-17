@@ -2,6 +2,7 @@
   display: inline-flex;
   flex-wrap: wrap;
 }
+
 .button__navigation {
   margin: 5px;
 }

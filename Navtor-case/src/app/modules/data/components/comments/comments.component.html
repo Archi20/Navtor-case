@@ -1,0 +1,12 @@
+Some comments from my side.
+<br/>
+Due to the complexity of the exercise, I leave some comments on what else needs to be done to get the final version.
+<br/><br/>
+1. Adding Redux for emissions to reduce the number of API calls made. In Vessel service, I created a redux implementation to show how it could be done. <br/>
+2. Adding Loagings - because a lot of data calls could take more time, loading scrolls <br/>
+3. For such big incoming data delays are a natural thing, to reduce latency, more complex modules should use LazyLoading,<br/>
+4. If Latency is known and expected we can use guards like canActivate to wait for requested data with rendering component <br/>
+5. Create more complex types for used Data<br/>
+6. I am not a big fan of unit tests on the frontend side, but here with more complex methods unit tests will fit and definitely should be implemented <br/>
+7. I do not focus on styling app, every company has a different approach to styling. Usually, I used prepared styling components. 
+

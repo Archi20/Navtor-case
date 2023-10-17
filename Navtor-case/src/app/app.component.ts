@@ -10,7 +10,6 @@ export class AppComponent {
   constructor(private primengConfig: PrimeNGConfig) {}
 
   ngOnInit() {
-    console.log('ngOnInit');
     this.primengConfig.zIndex = {
       modal: 1100, 
       overlay: 1000, 

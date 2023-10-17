@@ -1,1 +1,18 @@
-<p>emissions works!</p>
+<p-card>
+  <h2>Emissions</h2>
+
+  <p-dropdown
+    [options]="selectOptions"
+    [(ngModel)]="selectedVessel"
+    optionLabel="name"
+    placeholder="Select a Vessel"
+    (onChange)="getEmmisionData()"
+  ></p-dropdown>
+
+  <highcharts-chart
+    [Highcharts]="Highcharts"
+    [options]="chartOptions"
+    [callbackFunction]="chartCallback"
+    [(update)]="updateFlag"
+  ></highcharts-chart>
+</p-card>
